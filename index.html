@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıldızları Yakala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <h1>Yıldızları Yakala</h1>
+        <p class="subtitle">Gökyüzündeki yıldızları topla!</p>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span>SKOR</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>SÜRE</span>
+                <strong id="time">30</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>REKOR</span>
+                <strong id="best">0</strong>
+            </div>
+        </div>
+
+        <div id="game-area">
+            <div id="start-screen">
+                <div class="big-star">★</div>
+                <h2>Hazır mısın?</h2>
+                <p>30 saniyede olabildiğince çok yıldız yakala!</p>
+                <button id="start-btn">Oyuna Başla</button>
+            </div>
+
+            <div id="end-screen" class="hidden">
+                <h2>Oyun Bitti!</h2>
+                <p>Topladığın yıldız sayısı:</p>
+                <strong id="final-score">0</strong>
+                <button id="restart-btn">Tekrar Oyna</button>
+            </div>
+        </div>
+
+        <p class="hint">Yıldızlara dokunarak puan kazan.</p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
